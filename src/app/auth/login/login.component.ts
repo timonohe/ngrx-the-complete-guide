@@ -16,7 +16,7 @@ import { AuthActions } from '../action-types';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
   form: FormGroup;
 
@@ -30,10 +30,6 @@ export class LoginComponent implements OnInit {
           email: ['test@angular-university.io', [Validators.required]],
           password: ['test', [Validators.required]]
       });
-
-  }
-
-  ngOnInit() {
 
   }
 
