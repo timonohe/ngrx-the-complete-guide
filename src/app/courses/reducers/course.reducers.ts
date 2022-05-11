@@ -14,3 +14,5 @@ export const coursesReducer = createReducer(
   initialState,
   on(CourseActions.allCoursesLoaded, (state, action) => adapter.addAll(action.courses, state))
 );
+
+export const { selectAll } = adapter.getSelectors();
