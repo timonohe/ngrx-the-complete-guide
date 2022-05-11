@@ -20,13 +20,8 @@ import { selectAdvancedCourses, selectBeginnerCourses, selectPromoTotal } from '
 export class HomeComponent implements OnInit {
 
   promoTotal$: Observable<number>;
-
-  loading$: Observable<boolean>;
-
   beginnerCourses$: Observable<Course[]>;
-
   advancedCourses$: Observable<Course[]>;
-
 
   constructor(
     private dialog: MatDialog,
